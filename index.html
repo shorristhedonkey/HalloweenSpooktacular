@@ -9,18 +9,18 @@
           <a-scene>
             <a-assets>
               <img id="spookyJas" src="spookyJas.png">
-              <a-asset-item id="Saloon-obj" src="Saloon.obj"></a-asset-item>
-              <a-asset-item id="Saloon-mtl" src-"Saloon.mtl"></a-asset-item>
-              <video id="LCD" autoplay loop="true" src="LCD.mp4">
+              <!--<a-asset-item id="Saloon-obj" src="Saloon.obj"></a-asset-item>
+              <a-asset-item id="Saloon-mtl" src-"Saloon.mtl"></a-asset-item>-
+              <video id="LCD" autoplay loop="true" src="LCD.mp4">-->
             </a-assets>
             <a-entity position="0 0 3.8">
               <a-camera></a-camera>
             </a-entity>
-            <a-videosphere src="#LCD" position="0 0 0" radius="1000"
+          <!--<a-videosphere src="#LCD" position="0 0 0" radius="1000"
               animation__scale="property: scale; dir: alternate; dur: 1000;
                          easing: easeInSine; loop: true; to: 1.2 1 1.2"
             ></a-videosphere>
-            <a-obj-model src="#Saloon-obj" src="#Saloon-mtl"></a-obj-model>
+            <a-obj-model src="#Saloon-obj" src="#Saloon-mtl"></a-obj-model>-->
               <a-sphere  wireframe="true" position="0 1.25 -1" radius="1.25" color="#EF2D5E"
 
                 animation="property: color; dir: alternate; dur: 1000;
@@ -30,13 +30,7 @@
                 animation__yoyo="property: position; dir: alternate; dur: 1000;
                                  easing: easeInSine; loop: true; to: 0 2 0">
               </a-sphere>
-              <a-box src="#spookyJas" position="-1 0.5 1" width="1" height="2" depth="1" color="#4CC3D9"
-                  animation="property: color; dir: alternate; dur: 1000;
-                             easing: easeInSine; loop: true; to: #5F5"
-                  animation__scale="property: scale; dir: alternate; dur: 200;
-                             easing: easeInSine; loop: true; to: 1.2 1 1.2"
-                  animation__yoyo="property: position; dir: alternate; dur: 1000;
-                                   easing: easeInSine; loop: true; to: 0 2 0">
+              <a-box src="#spookyJas" position="-1 0.5 1" width="1" height="1" depth="1" color="#4CC3D9"
               </a-box>
             <a-cylinder position="1 0.75 1" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
             <a-plane wireframe="true" width="4" height="4" rotation="-90 0 0"></a-plane>
