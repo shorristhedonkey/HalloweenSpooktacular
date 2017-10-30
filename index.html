@@ -17,15 +17,16 @@
                 <a-asset-item id="skyscraper" src="skyscraper.dae"></a-asset-item>
               </a-assets>
                 <a-entity position="0 0 0">
-                  <a-camera  sound="#Weird"></a-camera>
+                  <a-camera></a-camera>
                 </a-entity>
                   <a-image src="#spookyJas" position="0 0 0" width="1" height="1">
                   </a-image>
                   <a-collada-model src="#UFO" position="0 20 50"></a-collada-model>
                   <a-collada-model src="#Castle" position="0 0 50"></a-collada-model>
                   <a-collada-model src="#skyscraper" position="0 -500 -40" rotation="-90 0 0"></a-collada-model>
-                  <a-box position="0 0 -3.5" width="0.75" height="0.5" depth="5" colour="#664400"></a-box>
+                  <a-box position="0 0 -3.5" width="0.75" height="0.5" depth="6" sound="#Weird" colour="#664400"></a-box>
                   <a-box src="#building" repeat="3" position="0 -5000 -40" height="10000" width="70" depth="70" color="#808080"></a-box>
+                  <a-plane position="0 -1000 0" height="5000" width="5000"></a-plane>
                 <a-sky src="#sky"></a-sky>
           </a-scene>
     </body>
