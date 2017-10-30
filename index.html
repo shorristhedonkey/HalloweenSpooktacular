@@ -14,7 +14,7 @@
               <video id="LCD" autoplay loop="true" src="LCD.mp4">-->
             </a-assets>
             <a-entity position="0 0 3.8">
-              <a-camera></a-camera>
+              <a-camera raycaster="objects: .collidable" showline="true"></a-camera>
             </a-entity>
           <!--<a-videosphere src="#LCD" position="0 0 0" radius="1000"
               animation__scale="property: scale; dir: alternate; dur: 1000;
@@ -28,7 +28,10 @@
 
             <a-cylinder wireframe="true" position="1 0.75 1" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
             <!--<a-plane wireframe="true" width="4" height="4" rotation="-90 0 0"></a-plane>-->
-            <a-sky color="#030303" wireframe="true"></a-sky>
+            <a-sky color="#030303" wireframe="true"
+              animation="property: color; dir: alternate; dur: 1000;
+                         easing: easeInSine; loop: true; to: #5F5">
+            </a-sky>
           </a-scene>
     </body>
 
