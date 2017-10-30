@@ -21,15 +21,21 @@
                          easing: easeInSine; loop: true; to: 1.2 1 1.2"
             ></a-videosphere>
             <a-obj-model src="#Saloon-obj" src="#Saloon-mtl"></a-obj-model>-->
-              <a-sphere  wireframe="true" position="0 0 0" radius="100" color="#EF2D5E">
               </a-sphere>
               <!--<a-box src="#spookyJas" position="-1 0.5 1" width="1" height="1" depth="1" color="#4CC3D9"
               </a-box>-->
-              <a-image src="#spookyJas" position="0 0 0"> </a-image>
+              <a-image src="#spookyJas" position="0 0 0" width="1" height="1"> </a-image>
 
             <a-cylinder wireframe="true" position="1 0.75 1" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
             <!--<a-plane wireframe="true" width="4" height="4" rotation="-90 0 0"></a-plane>-->
-            <a-sky color="#030303"></a-sky>
+            <a-sky color="#030303" wireframe="true"
+            animation="property: color; dir: alternate; dur: 1000;
+                       easing: easeInSine; loop: true; to: #5F5"
+            animation__scale="property: scale; dir: alternate; dur: 200;
+                       easing: easeInSine; loop: true; to: 1.2 1 1.2"
+            animation__yoyo="property: position; dir: alternate; dur: 1000;
+                             easing: easeInSine; loop: true; to: 0 1 0"
+                             ></a-sky>
           </a-scene>
     </body>
 
